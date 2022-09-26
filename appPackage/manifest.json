@@ -1,0 +1,39 @@
+﻿{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.14/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.14",
+  "version": "1.0.0",
+  "id": "<replace_by_bot_content_id>",
+  "packageName": "com.microsoft.tabadaptivecard",
+  "developer": {
+    "name": "Microsoft",
+    "websiteUrl": "https://www.microsoft.com",
+    "privacyUrl": "https://www.microsoft.com/privacy",
+    "termsOfUseUrl": "https://www.microsoft.com/termsofuse"
+  },
+  "name": {
+    "short": "Seller Cohort",
+    "full": "Seller Cohort"
+  },
+  "description": {
+    "short": "MSX Seller App",
+    "full": "App designed for sellers to view Marketing Interaction across his accounts."
+  },
+  "icons": {
+    "outline": "outline.png",
+    "color": "color.png"
+  },
+  "accentColor": "#60A18E",
+  "staticTabs": [
+    {
+      "entityId": "marketingInsights",
+      "name": "Marketing Insights",
+      "contentBotId": "<replace_by_bot_content_id>",
+      "scopes": [ "personal" ]
+    }
+  ],
+  "permissions": [ "identity", "messageTeamMembers" ],
+  "validDomains": [
+    "token.botframework.com",
+    "*"
+  ]
+}
